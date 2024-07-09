@@ -1,180 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
     <title>First Portfolio</title>
 </head>
+
 <body>
-    <!-- primera sección -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-stone-800 relative overflow-hidden">
-        <!-- navbar -->
-            <nav class="w-full fixed top-0 bg-stone-200">
-            <div class="container mx-auto items-center py-5 flex justify-between">
-                <div class="flex items-center gap-2">
-                    <img class="w-8" src="./images/logocolor.png" alt="">
-                    <span class="text-xl font-extralight-thin text-red-600">AB</span>
+    <!-- primera sección, navbar e intro -->
+    <section>
+        <div class="h-1/2 lg:h-screen bg-gradient-to-t from-red-400 to-red-50">
+            <!-- navbar -->
+            <nav class="w-full fixed top-0">
+                <div class="container mx-auto items-center py-5 flex justify-between">
+                    <div class="flex items-center gap-2">
+                        <img class="w-8 hover:shadow-red-600" src="./images/laptopvector.png" alt="logo">
+                        <span class="text-xl font-extralight-thin text-red-600">AB</span>
+                    </div>
+                    <ul class="hidden md:flex space-x-10 text-gray-600 text-sm font-bold uppercase">
+                        <li class="hover:text-red-600">
+                            <a href="#">homepage</a>
+                        </li>
+                        <li class="hover:text-red-600">
+                            <a href="#sobre">Sobre mi</a>
+                        </li>
+                        <li class="hover:text-red-600">
+                            <a href="#servicios">Servicios</a>
+                        </li>
+                        <li class="hover:text-red-600">
+                            <a href="#trabajos">Trabajos</a>
+                        </li>
+                        <li class="hover:text-red-600">
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <img src="./images/moon.png" class="w-5 cursor-pointer hidden md:block" alt="darkmode">
+                    <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                        <div class="w-6 h-0.5 hover:text-red-600"></div>
+                        <div class="w-6 h-0.5 hover:text-red-600"></div>
+                        <div class="w-6 h-0.5 hover:text-red-600"></div>
+                    </div>
+                    <ul id="menu"
+                        class="hidden bg-gray-300 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-red-600 text-center">
+                        <li>
+                            <a href="#">homepage</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre mi</a>
+                        </li>
+                        <li>
+                            <a href="#servicios">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#trabajos">Trabajos</a>
+                        </li>
+                        <li>
+                            <a href="#formacion">Formación</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="hidden md:flex space-x-10 text-gray-600 text-sm font-bold uppercase">
-                    <li class="hover:text-red-600">
-                        <a href="#">homepage</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="#sobre">Sobre mi</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="#servicios">Servicios</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="#trabajos">Trabajos</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="#formacion">Formación</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-                <img src="./images/Doorvector.png" class="w-5 cursor-pointer hidden md:block" alt="">
-                <div id="hamburger"  class="space-y-1 md:hidden cursor-pointer z-20">
-                    <div class="w-6 h-0.5 hover:text-red-600"></div>
-                    <div class="w-6 h-0.5 hover:text-red-600"></div>
-                    <div class="w-6 h-0.5 hover:text-red-600"></div>
-                </div>
-                <ul id="menu" class="hidden bg-gray-300 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-red-600 text-center">
-                    <li>
-                        <a href="#">homepage</a>
-                    </li>
-                    <li >
-                        <a href="#sobre">Sobre mi</a>
-                    </li>
-                    <li >
-                        <a href="#servicios">Servicios</a>
-                    </li>
-                    <li >
-                        <a href="#trabajos">Trabajos</a>
-                    </li>
-                    <li >
-                        <a href="#Testimonios">Testimonios</a>
-                    </li>
-                    <li >
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
             </nav>
+    </section>
+
+    <section>
         <!-- contenido primera página -->
         <!-- foto -->
-            <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover z-10" src="./images/Ancabg.png" alt="">
-        <!-- forma foto -->
-            <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-96 h-96 bg-blue-500 rounded-full -z-10">
-            </div>
+        <img class="fixed bottom-0 right-0 mx-auto h-2/4 z-50" src="./images/Ancabg.png" alt="portrait">
         <!-- texto saludo -->
-            <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
-                <span class="text-gray-600">¡Hola! soy,</span>
-                <p class="text-red-600">Anca Bacria</p>
-            </div>
-            <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-indigo-700 absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 ">
-                <h1 class="text-4xl font-bold text-zinc-800">
-                    ¡Hola! Soy Anca
-                </h1><!-- falta añadir efecto filler al texto -->
-                <p class="text-gray-700">
-                    Con más de 6 meses de experiencia en desarrollo y diseño web. 
-                </p>
-                <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contacto">Trabaja conmigo</a>
-            </div>
-        
+        <div
+            class="flex top-1/3 left-52 text-xl sm:left-10 sm:text-xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+            <span class="text-gray-600 z-10">¡Hola! soy,</span>
+            <p class="text-red-600">Anca Bacria</p>
+            <div>
+                <h2>
+                    Con más de 6 meses de experiencia en desarrollo y diseño web.
+                </h2>
+            </div>>
+        </div>
+
+        </div>
+    </section>
+
+
+    <div
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-red-600 absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 ">
+        <h1 class="text-4xl font-bold text-zinc-800">
+            ¡Hola! Soy Anca
+        </h1><!-- falta añadir efecto filler al texto -->
+        <a class="bg-red-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contacto">Trabaja
+            conmigo</a>
+    </div>
+
     </div>
     <!-- sobre mi -->
-    <div id="#Sobremi" class="px-10">
+    <div id="sobre" class="px-10">
         <div class="container mx-auto py-40 flex gap-20">
             <!-- izquierda -->
-             <div class="relative h-full rounded-full overflow-hidden">
-                <img src="./images/fotoAnca.jpg" alt="">
-             </div>
+            <div class="relative h-full rounded-full overflow-hidden">
+            </div>
             <!-- derecha -->
-             <div class="my-auto flex flex-col gap-3">
-                <h1 class="text-indigo-600 font-bold">SOBRE MI</h1>
+            <div class="my-auto flex flex-col gap-3">
+                <h1 class="text-red-600 font-bold">SOBRE MI</h1>
                 <h2 class="text-3xl font-medium">Un diseño mejor con una experiencia mejor</h2>
-                Hola
-             </div>
+            </div>
         </div>
     </div>
     <!-- Servicios -->
-    <div>
+    <section id="servicios" class="py-20">
         <div class="container mx-auto">
             <!-- parte superior -->
-             <div class="flex flex-col gap-3 items-center">
-                <h1 class="text-4xl font-bold text-zinc-800">SERVICIOS</h1>
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-4xl font-bold text-red-600">SERVICIOS</h1>
                 <h1 class="text-3xl">¿QUÉ OFREZCO?</h1>
-                <p class="w-1/2 text-center text-gray-400">Podemos crear un sitio web que refuerce tu imagen de marca mientras le facilita la navegación a tu audiencia gracias a la simplicidad.
+                <p class="w-1/2 text-center text-gray-400">Podemos crear un sitio web que refuerce tu imagen de marca
+                    mientras le facilita la navegación a tu audiencia gracias a la simplicidad.
                 </p>
-             </div>
-            <!-- parte inferior -->
-             <div class="p-5 sm:p-0 flex flex-wrap justify-between">
-                <!-- tarjetas -->
-                 <div class="w-full md:w-8/12/12 shadow-xl rounded-lg p-5 my-5 md:my-15 flex flex-col gap-3">
-                    <img src="./images/YSL.png" alt="">
-                    <h1 class="font-medium text-lg">YSL 2024</h1>
-                    <p class="text-gray-400">Diseño y mantenimiento de la página web, asegurando que sea atractiva, funcional y fácil de navegar para los usuarios. Trabajo junto al equipo de diseño para crear un sitio web que refleje la identidad y estilo de la marca, incorporando elementos visuales impactantes y una navegación intuitiva.</p>
-                 </div>
-                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img src="./images/COS.png" alt="">
-                    <h1 class="font-medium text-lg">COS 2023</h1>
-                    <p class="text-gray-400">Como programadora front end para COS, he sido responsable de diseñar y desarrollar experiencias de usuario cautivadoras y eficientes que reflejan la esencia y el estilo de la marca. Mi trabajo ha abarcado diversas áreas clave, permitiendo que la plataforma en línea ofrezca una navegación intuitiva y atractiva para los clientes.</p>
-                 </div>
-                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img src="./images/Alhambra.png" alt="">
-                    <h1 class="font-medium text-lg">Cervezas Alhambra 2023</h1>
-                    <p class="text-gray-400">Soporte en el desarrollo web, garantizando el correcto funcionamiento y optimización del sitio web de la marca. 
+                <p class="w-1/2 text-center text-gray-400 mb-20">*con KTML Css Java Script Python Php Perl</p>
+            </div>
+        </div>
 
-                    Colaboración con el equipo de marketing para asegurar que la página web reflejara fielmente la imagen de la marca y se alineara con sus objetivos comerciales.</p>
-                 </div>
-                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img src="./images/ELpais.png" alt="">
-                    <h1 class="font-medium text-lg">El País 2023</h1>
-                    <p class="text-gray-400">Como programadora back end para El País, he desempeñado un papel crucial en el desarrollo y mantenimiento de la infraestructura tecnológica que soporta la plataforma digital del periódico. Mi trabajo ha abarcado diversas áreas clave que han permitido ofrecer una experiencia en línea robusta, segura y eficiente para millones de lectores diarios.</p>
-                 </div>
-             </div>
+    <!-- parte inferior -->
+    <div class="p-5 flex flex-wrap">
+        <!-- Trabajos -->
+        <!-- tarjeta YSL -->
+        <div class="w-full md:w-6/12 shadow-xl rounded-lg p-5 my-5 md:my-15 flex flex-col gap-3">
+            <img src="./images/YSL.png" alt="YSL">
+            <h1 class="font-medium text-lg">YSL 2024</h1>
+            <p class="text-gray-400">Diseño y mantenimiento de la página web, asegurando que sea atractiva,
+                funcional y fácil de navegar para los usuarios. Trabajo junto al equipo de diseño para crear un
+                sitio web que refleje la identidad y estilo de la marca, incorporando elementos visuales
+                impactantes y una navegación intuitiva.</p>
+        </div>
+        <!-- tarjeta COS -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+            <img src="./images/COS.png" alt="COS">
+            <h1 class="font-medium text-lg">COS 2023</h1>
+            <p class="text-gray-400">Como programadora front end para COS, he sido responsable de diseñar y
+                desarrollar experiencias de usuario cautivadoras y eficientes que reflejan la esencia y el
+                estilo de la marca. Mi trabajo ha abarcado diversas áreas clave, permitiendo que la plataforma
+                en línea ofrezca una navegación intuitiva y atractiva para los clientes.</p>
+        </div>
+        <!-- tarjeta Alhambra -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+            <img src="./images/Alhambra.png" alt="Cervezas">
+            <h1 class="font-medium text-lg">Cervezas Alhambra 2023</h1>
+            <p class="text-gray-400">Soporte en el desarrollo web, garantizando el correcto funcionamiento y
+                optimización del sitio web de la marca.
 
+                Colaboración con el equipo de marketing para asegurar que la página web reflejara fielmente la
+                imagen de la marca y se alineara con sus objetivos comerciales.</p>
+        </div>
+        <!-- tarjeta El País -->
+        <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+            <img src="./images/ELpais.png" alt="ELpais">
+            <h1 class="font-medium text-lg">El País 2023</h1>
+            <p class="text-gray-400">Como programadora back end para El País, he desempeñado un papel crucial en
+                el desarrollo y mantenimiento de la infraestructura tecnológica que soporta la plataforma
+                digital del periódico. Mi trabajo ha abarcado diversas áreas clave que han permitido ofrecer una
+                experiencia en línea robusta, segura y eficiente para millones de lectores diarios.</p>
         </div>
     </div>
-    <!-- Formación -->
+    </section>
     <!-- Contacto -->
-     <div>
+    <div id="contacto" class="py-20">
         <div class="container mx-auto">
             <!-- parte superior -->
-             <div class="flex flex-col gap-3 items center">
-                <h1 class="text-rose-800 font-bold">CONTACTO</h1>
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-red-600 font-bold">CONTACTO</h1>
                 <h1 class="text-3xl">¿Alguna consulta?</h1>
                 <p class="w-1/2 text-center text-gray-400">¿Tienes una idea? Consúltame para veer qué podemos crear juntos</p>
-             </div>
+            </div>
             <!-- parte inferior -->
-            <form action="" class="mt-5 p-8 flex flex-col gap-5 items-center">
-                <input class="p-2 w-full md:w-1/2 ring-slate-800 rounded-sm border-2" type="text" placeholder="Nombre Apellido">
-                <input class="p-2 w-full md:w-1/2 ring-slate-800 rounded-sm" type="email" placeholder="Email">
-                <textarea class="p-2 w-full md:w-1/2 ring-slate-800 rounded-sm" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <button class="w-1/2 bg-red-700 text-white font-medium px-3 py-2 rounded-md cursor-pointer">Submit</button>
+            <form action="process_form.php" method="POST" class="mt-5 p-8 flex flex-col gap-5 items-center">
+                <input class="p-2 w-full md:w-1/2 ring-slate-800 rounded-sm border-2" type="text"
+                    placeholder="Nombre Apellido" required>
+                <input class="p-2 w-full md:w-1/2 ring-slate-800 rounded-sm" type="email" placeholder="Email" required>
+                <textarea class="p-2 w-full md:w-1/2 ring-slate-800 rounded-sm" id="" cols="30" rows="10"
+                    placeholder="Mensaje" required></textarea>
+                <button class="w-1/2 bg-red-700 text-white font-medium px-3 py-2 rounded-md">Submit</button>
             </form>
         </div>
-     </div>
-     <!-- footer -->
-     <div class="w-full bg-gray-900">
+    </div>
+    <!-- footer -->
+    <div class="bg-gray-900 w-full">
         <div class="container mx-auto items-center py-5 flex justify-between">
             <div class="flex items-center gap-2">
-                <img class="w-8" src="./images/logoABbg.png" alt="">
+                <img class="w-8" src="./images/logoABbg.png" alt="logo">
                 <span class="text-xl font-semibold text-white">Anca Bacria</span>
             </div>
-            <span class="hidden md:block font-medium text-white" Anca Bacria® 2024 ></span>
+            <span class="hidden md:block font-medium text-white" Anca Bacria® 2024></span>
             <img src="./images/Doorvector.png" class="w-5 cursor-pointer hidden md:block" alt="">
             <div class="flex gap-2">
-                <img class="w-4 cursor-pointer" src="src\images\YTvector.jpg" alt="">
-                <img class="w-4 cursor-pointer" src="src\images\Twitter-X.jpg" alt="">
-                <img class="w-4 cursor-pointer" src="src\images\linkedin.jpg" alt="">
-                <img class="w-4 cursor-pointer" src="src\images\whatsapp.png" alt="">
-        </div>
+                <img class="w-4 cursor-pointer" src="src\images\YTvector.jpg" alt="youtube">
+                <img class="w-4 cursor-pointer" src="src\images\Twitter-X.jpg" alt="twitter">
+                <img class="w-4 cursor-pointer" src="src\images\linkedin.jpg" alt="linkedin">
+                <img class="w-4 cursor-pointer" src="src\images\whatsapp.png" alt="whatsapp">
+            </div>
         </div>
 </body>
+
 </html>
